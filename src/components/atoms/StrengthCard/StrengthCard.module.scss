@@ -1,0 +1,93 @@
+.strengthCard {
+  width: 100%;
+  position: relative;
+  height: 480px;
+  .overlayWrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    @include flex-center();
+    color: white;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.65) 65%,
+      rgba(0, 0, 0, 0.65) 65%
+    );
+    .overlay {
+      @include flex-center(column, 40px);
+      text-align: center;
+      .number {
+        max-width: 310px;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-medium;
+        letter-spacing: 7.2px;
+        &.desktop {
+        }
+      }
+      .title {
+        // max-width: 310px;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-medium;
+        letter-spacing: 9.6px;
+        margin: 0px;
+        font-family: $noto;
+      }
+      .subtitle {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 15px */
+        letter-spacing: 0.5px;
+      }
+      .description {
+        max-width: 430px;
+        letter-spacing: 1px;
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .strengthCard {
+    width: 100%;
+    position: relative;
+    height: 256px;
+    .overlayWrapper {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      @include flex-center();
+      color: white;
+      padding: 20px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.65) 65%,
+        rgba(0, 0, 0, 0.65) 65%
+      );
+      .overlay {
+        @include flex-center(column, 24px);
+        text-align: center;
+        .number {
+          &.desktop {
+            display: none;
+          }
+        }
+        .title {
+          max-width: 310px;
+          font-family: $noto;
+          font-size: $font-size-md;
+          font-weight: $font-weight-medium;
+          letter-spacing: 6px;
+        }
+        .description {
+          max-width: 430px;
+          font-size: 14px;
+          font-weight: $font-weight-regular;
+          letter-spacing: 0.7px;
+        }
+      }
+    }
+  }
+}

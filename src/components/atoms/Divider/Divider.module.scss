@@ -1,0 +1,28 @@
+.divider {
+  width: 100%;
+}
+
+.black {
+  height: 4px;
+  background-color: $color-black;
+}
+.white {
+  height: 4px;
+  background-color: $color-white;
+}
+.pink {
+  height: 8px;
+  background-color: $color-pink;
+}
+
+@media (max-width: $mobile) {
+  .black {
+    height: 2px;
+  }
+  .white {
+    height: 2px;
+  }
+  .pink {
+    height: 4px;
+  }
+}

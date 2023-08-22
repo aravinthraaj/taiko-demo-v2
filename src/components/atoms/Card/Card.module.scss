@@ -1,0 +1,74 @@
+.card {
+  max-width: 400px;
+  background-color: $color-gray;
+  .imgWrapper {
+    width: 100%;
+    height: 275px;
+    max-height: 275px;
+    position: relative;
+  }
+  .detailsWrapper {
+    height: 275px;
+    max-height: 275px;
+    @include flex-center(column, 48px);
+    .details {
+      @include flex-center(column, 17px);
+      font-weight: $font-weight-medium;
+      .weight {
+        font-size: $font-size-xl;
+        letter-spacing: 9.6px;
+      }
+      .model {
+        font-size: $font-size-base;
+        letter-spacing: 4.8px;
+      }
+      .price {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 4.8px;
+      }
+    }
+    .download {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .card {
+    max-width: 160px;
+    .imgWrapper {
+      width: 100%;
+      height: 110px;
+      max-height: 160px;
+      position: relative;
+    }
+    .detailsWrapper {
+      height: 160px;
+      max-height: 160px;
+      @include flex-center(column, 8px);
+      .details {
+        @include flex-center(column, 0px);
+        font-weight: $font-weight-medium;
+        padding: 10px;
+        .weight {
+          font-size: $font-size-sm;
+          letter-spacing: 4.8px;
+        }
+        .model {
+          font-size: 10px;
+          letter-spacing: 0.5px;
+        }
+      }
+      .download {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

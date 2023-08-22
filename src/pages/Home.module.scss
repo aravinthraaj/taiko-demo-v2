@@ -1,0 +1,24 @@
+.main {
+  // font-family: $noto;
+  font-family: 'Courier New', Courier, monospace;
+  // @include flex-center(column, 0px);
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main {
+    font-family: $noto;
+    // @include flex-center(column, 0px);
+    .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
+  }
+}

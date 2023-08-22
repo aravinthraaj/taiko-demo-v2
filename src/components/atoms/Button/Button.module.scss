@@ -1,0 +1,137 @@
+.default {
+  background-color: $color-pink;
+  border: none;
+  color: $color-white;
+  cursor: pointer;
+  padding: 8px 16px;
+  @include font($font-size-base, $noto, $font-weight-medium);
+  @include flex-center(row, 8px);
+  letter-spacing: 4.8px;
+  box-shadow: $box-shadow-normal;
+  transition: all 0.3s;
+  &:hover {
+    color: $color-pink;
+    background-color: $color-white;
+  }
+  svg {
+    transition: all 0.3s;
+    fill: $color-white;
+    width: 25px;
+    height: 25px;
+  }
+  &:hover svg {
+    fill: $color-pink;
+  }
+}
+
+.secondary {
+  background-color: transparent;
+  padding: 0px;
+  @include font($font-size-base, $noto, $font-weight-medium);
+  @include flex-center(row, 8px);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 4.8px;
+  color: $color-black;
+  transition: all 0.3s;
+  &:hover {
+    color: $color-pink;
+  }
+  svg {
+    stroke: $color-pink;
+    width: 52px;
+    height: 52px;
+    transition: all 0.3s;
+  }
+  &:hover svg {
+    fill: $color-pink;
+  }
+  &:hover svg path:nth-child(2) {
+    stroke: white;
+    transition: all 0.3s;
+  }
+}
+
+.recruit {
+  background-color: $color-pink;
+  border: none;
+  color: $color-white;
+  cursor: pointer;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 7.2px;
+  padding: 16px 32px;
+  box-shadow: $box-shadow-normal;
+  @include flex-center(row, 40px);
+  transition: all 0.3s;
+  &:hover {
+    color: $color-pink;
+    background-color: $color-white;
+  }
+  svg {
+    transition: all 0.3s;
+    fill: $color-white;
+    width: 32px;
+    height: 32px;
+  }
+  &:hover svg {
+    fill: $color-pink;
+  }
+}
+
+.icon{
+  display: flex;
+}
+
+@media (max-width: $mobile) {
+  .desktop {
+    display: none;
+  }
+  .default {
+    background-color: $color-pink;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    padding: 4px 8px;
+    @include font($font-size-xs, $noto, $font-weight-regular);
+    @include flex-center(row, 8px);
+    letter-spacing: 0.6px;
+    box-shadow: $box-shadow-normal;
+    transition: all 0s;
+
+
+    svg {
+      width: 20px;
+      height: 20px;
+      transition: all 0s;
+    }
+  }
+
+  .secondary {
+    background-color: transparent;
+    padding: 0px;
+    @include font($font-size-base, $noto, $font-weight-medium);
+    @include flex-center(row, 8px);
+    border: none;
+    cursor: pointer;
+    letter-spacing: 4.8px;
+    color: $color-black;
+    transition: all 0s;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      transition: all 0s;
+    }
+  }
+  .recruit {
+    font-size: 16px;
+    letter-spacing: 4.8px;
+    padding: 8px 24px;
+    box-shadow: $box-shadow-normal;
+    @include flex-center(row, 40px);
+    transition: all 0s;
+  }
+}

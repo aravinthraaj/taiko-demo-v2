@@ -1,0 +1,99 @@
+.subHeroSection {
+  height: 60vh;
+  position: relative;
+  margin-top: 64px;
+  // max-width: 1200px;
+  font-family: $noto;
+  text-align: center;
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 200px 0px;
+    @include flex-center(column);
+    background: linear-gradient(
+      0deg,
+      rgba(245, 245, 245, 0.85) 0%,
+      rgba(245, 245, 245, 0.85) 100%
+    );
+    .overlayContainer {
+      width: 1200px;
+      max-width: 1200px;
+      @include flex-center(column, 36px);
+      .titleWrapper {
+        @include flex-center(column, 8px);
+        .title {
+          font-size: $font-size-xxl;
+          font-weight: $font-weight-medium;
+          letter-spacing: 12px;
+          color: $color-pink;
+        }
+        .subTitle {
+          font-size: $font-size-lg;
+          font-weight: $font-weight-medium;
+          letter-spacing: 7.2px;
+          color: $color-black;
+        }
+      }
+      .description {
+        color: $color-black;
+        margin: 0px;
+        &.mobile {
+          display: none;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 21px */
+          letter-spacing: 0.7px;
+        }
+        &.desktop {
+          display: unset;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0.8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .subHeroSection {
+    margin-top: 48px;
+
+    .overlay {
+      .overlayContainer {
+        width: 300px;
+        max-width: 300px;
+        @include flex-center(column, 36px);
+        .titleWrapper {
+          @include flex-center(column, 8px);
+          .title {
+            font-size: $font-size-lg;
+            font-weight: $font-weight-medium;
+            letter-spacing: 7.2px;
+          }
+          .subTitle {
+            font-size: $font-size-md;
+            font-weight: $font-weight-medium;
+            letter-spacing: 6px;
+          }
+        }
+        .description {
+          color: $color-black;
+          font-size: 14px;
+          &.mobile {
+            display: unset;
+          }
+          &.desktop {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

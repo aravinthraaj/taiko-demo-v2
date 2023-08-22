@@ -1,0 +1,15 @@
+@mixin font($font-size, $font-family: $noto, $font-weight: $fw-regular) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin flex-center($direction: row, $gap: false) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  @if $gap {
+    gap: $gap;
+  }
+}

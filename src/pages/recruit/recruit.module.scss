@@ -1,0 +1,24 @@
+.recruitPage {
+  .careersPage {
+    padding: 200px 0px;
+    @include flex-center();
+    background-color: $color-gray;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .recruitPage {
+    .recruitSectionWrapper {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    .careersPage {
+      padding: 80px 0px;
+      @include flex-center();
+      background-color: $color-gray;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  color: white;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    @include flex-center(column, 64px);
+    justify-content: flex-end;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 26.56%,
+      rgba(0, 0, 0, 0.75) 71.35%
+    );
+    .description {
+      width: 100%;
+      @include flex-center(column, 40px);
+      .mobileBr {
+        display: none;
+      }
+      .pink {
+        width: 100%;
+        height: 56px;
+        background-color: $color-pink;
+        text-align: center;
+        @include flex-center(column);
+        justify-content: center;
+        p {
+          font-size: $font-size-xxl;
+          letter-spacing: 12px;
+          font-weight: $font-weight-medium;
+        }
+      }
+      p {
+        text-align: center;
+        color: $color-white;
+        margin: 0px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 7.2px;
+      }
+    }
+    .scroll {
+      @include flex-center(column, 8px);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 160%;
+      letter-spacing: 4.8px;
+      .line {
+        height: 64px;
+        width: 1px;
+        background-color: $color-white;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .hero {
+    width: 100%;
+    height: 100dvh;
+    top: 0px;
+    color: white;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      color: white;
+      @include flex-center(column, 64px);
+      justify-content: flex-end;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 26.56%,
+        rgba(0, 0, 0, 0.75) 71.35%
+      );
+      .description {
+        width: 100%;
+        @include flex-center(column, 40px);
+        .mobileBr {
+          display: unset;
+        }
+        .pink {
+          width: 100%;
+          height: 56px;
+          background-color: transparent;
+          text-align: center;
+          @include flex-center(column);
+          justify-content: end;
+          p {
+            font-size: $font-size-lg;
+            letter-spacing: 7.2px;
+          }
+        }
+        p {
+          text-align: center;
+          color: rgba($color-white, 0.8);
+          margin: 0px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+          letter-spacing: 0.8px;
+        }
+      }
+      .scroll {
+        @include flex-center(column, 8px);
+        .line {
+          height: 64px;
+          width: 1px;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+}

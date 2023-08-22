@@ -1,0 +1,181 @@
+.companyPage {
+  font-family: $noto;
+  width: 100%;
+
+  .companyProfile {
+    padding: 200px 0px;
+    @include flex-center(column);
+    .companyDetails {
+      .title {
+        font-size: $font-size-xxl;
+        font-weight: $font-weight-medium;
+        letter-spacing: 12px;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0px;
+        li {
+          margin-left: 0px;
+          padding: 16px 0px;
+          border-bottom: 1px solid #c8c8c8;
+          color: $color-black-lighter;
+          display: flex;
+          align-items: flex-start;
+          font-size: $font-size-base;
+          font-weight: 600;
+          line-height: 160%;
+          letter-spacing: 4.8px;
+          span {
+            display: inline-block;
+            width: 100%;
+            max-width: 192px;
+            color: $color-pink;
+            font-size: $font-size-base;
+            font-weight: $font-weight-medium;
+            letter-spacing: 4.8px;
+          }
+          p {
+            margin: 0px;
+            text-wrap: wrap;
+            max-width: 695px;
+            width: 695px;
+            .mobileBr {
+              display: none;
+            }
+          }
+          &:first-child {
+            border-top: 1px solid #c8c8c8;
+          }
+        }
+      }
+    }
+  }
+  .message {
+    @include flex-center(column, 80px);
+    padding: 200px 0px;
+
+    width: 100%;
+    background-color: $color-gray;
+    .title,
+    .name {
+      font-size: $font-size-xxl;
+      font-weight: $font-weight-medium;
+      letter-spacing: 12px;
+      text-align: center;
+    }
+    .titlesWrapper {
+      @include flex-center(column);
+      .subTitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.8px;
+      }
+    }
+    .description {
+      max-width: 800px;
+      text-align: center;
+      font-size: $font-size-base;
+      font-weight: $font-weight-regular;
+      letter-spacing: 0.8px;
+    }
+    .imageWrapper {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .companyPage {
+    font-family: $noto;
+    width: 100%;
+
+    .companyProfile {
+      padding: 80px 0px;
+      @include flex-center(column);
+      .companyDetails {
+        .title {
+          font-size: $font-size-md;
+          font-weight: $font-weight-medium;
+          letter-spacing: 12px;
+          text-align: center;
+          margin-bottom: 64px;
+        }
+        ul {
+          list-style: none;
+          // padding: 0px 20px;
+          li {
+            margin-left: 0px;
+            // padding: 16px 0px;
+            border-bottom: 1px solid #c8c8c8;
+            color: $color-black-lighter;
+            display: flex;
+            align-items: flex-start;
+            font-size: $font-size-base;
+            font-weight: 600;
+            line-height: 160%;
+            letter-spacing: 4.8px;
+
+            span {
+              width: 120px;
+              max-width: 125px;
+              color: $color-pink;
+              font-size: 14px;
+              font-weight: $font-weight-medium;
+              letter-spacing: 4.8px;
+            }
+            p {
+              margin: 0px;
+              text-wrap: wrap;
+              max-width: 223px;
+              font-size: 14px;
+              letter-spacing: 0.7px;
+              font-weight: 400;
+              .mobileBr {
+                display: unset;
+              }
+            }
+            &:first-child {
+              border-top: 1px solid #c8c8c8;
+            }
+          }
+        }
+      }
+    }
+    .message {
+      @include flex-center(column, 64px);
+      padding: 80px 0px;
+
+      width: 100%;
+      background-color: $color-gray;
+      .title,
+      .name {
+        font-size: $font-size-md;
+        font-weight: $font-weight-medium;
+        letter-spacing: 6px;
+        text-align: center;
+      }
+      .description {
+        max-width: 800px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: $font-weight-regular;
+        letter-spacing: 0.7px;
+        padding: 0px 20px;
+      }
+      .imageWrapper {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+    }
+  }
+}

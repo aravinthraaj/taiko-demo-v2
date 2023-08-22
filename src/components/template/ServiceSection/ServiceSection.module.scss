@@ -1,0 +1,49 @@
+.serviceSection {
+  padding: 200px 0px;
+  text-align: center;
+  width: 100%;
+  font-family: $noto;
+  @include flex-center(column);
+
+  .serviceSectionContainer {
+    width: 100%;
+    max-width: 1280px;
+    @include flex-center(column, 80px);
+    .title {
+      font-size: $font-size-xxl;
+      font-weight: $font-weight-medium;
+      line-height: 160%;
+      letter-spacing: 12px;
+    }
+    .notes {
+      font-size: $font-size-lg;
+      font-weight: $font-weight-regular;
+      letter-spacing: 1.2px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .serviceSection {
+    padding: 80px 0px;
+    .serviceSectionContainer {
+      width: 100%;
+      max-width: 346px;
+      .desktop {
+        display: none;
+      }
+      @include flex-center(column, 64px);
+      .title {
+        font-size: $font-size-md;
+        font-weight: $font-weight-medium;
+        line-height: 160%;
+        letter-spacing: 6px;
+      }
+      .notes {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-regular;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+}

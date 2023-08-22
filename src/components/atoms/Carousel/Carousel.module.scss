@@ -1,0 +1,12 @@
+.carousel {
+  position: relative;
+}
+
+.carousel .imgWrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
