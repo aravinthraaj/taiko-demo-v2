@@ -38,7 +38,7 @@ const Carousel: React.FC<FadeImageSliderProps> = ({ images }) => {
               fill
               // objectFit='cover'
               style={{ objectFit: "cover" }}
-              quality={100}
+              unoptimized
             />
           </div>
         </div>
