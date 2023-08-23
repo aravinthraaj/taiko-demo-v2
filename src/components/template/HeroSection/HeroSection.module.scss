@@ -4,12 +4,13 @@
   top: 0px;
   color: white;
   position: relative;
-
+  font-family: $noto;
   .overlay {
     position: absolute;
     height: 100%;
     width: 100%;
     color: white;
+
     @include flex-center(column, 64px);
     justify-content: flex-end;
     background: linear-gradient(
@@ -31,8 +32,8 @@
         @include flex-center(column);
         justify-content: center;
         p {
-          font-size: $font-size-xxl;
-          letter-spacing: 12px;
+          font-size: $font-size-xl;
+          letter-spacing: 9.6px;
           font-weight: $font-weight-medium;
         }
       }
@@ -40,10 +41,10 @@
         text-align: center;
         color: $color-white;
         margin: 0px;
-        font-size: 24px;
-        font-weight: 400;
+        font-size: $font-size-md;
+        font-weight: $font-weight-medium;
         line-height: 160%; /* 38.4px */
-        letter-spacing: 7.2px;
+        letter-spacing: 6px;
       }
     }
     .scroll {
@@ -95,18 +96,18 @@
           @include flex-center(column);
           justify-content: end;
           p {
-            font-size: $font-size-lg;
-            letter-spacing: 7.2px;
+            font-size: $font-size-md;
+            letter-spacing: 6px;
           }
         }
         p {
           text-align: center;
           color: rgba($color-white, 0.8);
           margin: 0px;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 400;
           line-height: 150%; /* 24px */
-          letter-spacing: 0.8px;
+          letter-spacing: 0.7px;
         }
       }
       .scroll {

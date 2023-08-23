@@ -29,7 +29,7 @@ const RecruitSection = ({
           <div className={styles.desktop}>
             <pre>{description}</pre>
           </div>
-          <p className={styles.mobile}>{description}</p>
+          <pre className={styles.mobile}>{description}</pre>
         </div>
       </section>
     </div>

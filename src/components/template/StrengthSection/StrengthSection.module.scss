@@ -4,6 +4,7 @@
   text-align: center;
   color: $color-white;
   position: relative;
+  font-family: $noto;
   @include flex-center(column, 64px);
   .titleWrapper {
     z-index: 1;

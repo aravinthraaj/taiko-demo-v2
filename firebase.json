@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "target": "taiko-demo",
+    "public": "out",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

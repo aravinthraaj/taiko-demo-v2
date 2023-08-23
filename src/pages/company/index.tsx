@@ -11,7 +11,9 @@ const page = () => {
       <SubHeroSection
         title={"Company"}
         subtitle={"会社について"}
-        description={"お客様・社員・機械・車両・道具　を大事にする"}
+        description={
+          "昭和58年の創業以来、地道に着実にクレーン作業を通じて社会インフラの整備や企業活動の発展に貢献してまいりました。"
+        }
         imageUrl={companyImage}
       />
       <div className={styles.companyProfile}>

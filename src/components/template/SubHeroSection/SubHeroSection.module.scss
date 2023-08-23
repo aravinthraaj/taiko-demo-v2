@@ -38,15 +38,15 @@
         }
       }
       .description {
-        color: $color-black;
+        color: rgba(0, 0, 0, 0.8);
         margin: 0px;
         &.mobile {
           display: none;
-          font-size: 14px;
+          font-size: 12px;
           font-style: normal;
           font-weight: 400;
-          line-height: 150%; /* 21px */
-          letter-spacing: 0.7px;
+          line-height: 150%; /* 18px */
+          letter-spacing: 0.6px;
         }
         &.desktop {
           display: unset;
@@ -84,8 +84,8 @@
           }
         }
         .description {
-          color: $color-black;
-          font-size: 14px;
+          color: rgba(0, 0, 0, 0.8);
+
           &.mobile {
             display: unset;
           }
