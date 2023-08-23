@@ -1,7 +1,7 @@
 import React from "react"
-import heroImage1 from "@Images/hero.webp"
-import heroImage2 from "@Images/hero2.webp"
-import heroImage3 from "@Images/hero3.webp"
+import heroImage1 from "@Images/hero.png"
+import heroImage2 from "@Images/hero2.png"
+import heroImage3 from "@Images/hero3.jpg"
 
 import styles from "./HeroSection.module.scss"
 import Logo from "@/components/atoms/Logo/Logo"
