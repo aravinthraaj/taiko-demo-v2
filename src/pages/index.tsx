@@ -5,10 +5,9 @@ import StrengthSection from "@/components/template/StrengthSection/StrengthSecti
 import DesktopHomeSection from "@/components/template/DesktopHomeSection/DesktopHomeSection"
 import MobileHomeSection from "@/components/template/MobileHomeSection/MobileHomeSection"
 
-import serviceImage from "@Images/service.webp"
-import companyImage from "@Images/company_profile.webp"
-import recruitImage from "@Images/recruitment_information.webp"
-
+import serviceImage from "@Images/service.jpg"
+import companyImage from "@Images/company_profile.jpg"
+import recruitImage from "@Images/recruitment_information.jpg"
 
 export default function Home() {
   return (
